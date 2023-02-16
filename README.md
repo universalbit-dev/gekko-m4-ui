@@ -58,14 +58,14 @@ quasar build
 ![Alt text](https://github.com/universalbit-dev/gekko-quasar-ui/blob/master/img/quasar_build_succeded.png "succeded")
 
 ---
----
+![Alt text](https://github.com/universalbit-dev/papirus-icon-theme/blob/master/Papirus-Dark/24x24/actions/curve-connector.svg "connector")
 
-3. In your gekko-folder zip up the folder `web/vue` as backup.
-4. Place everything from repo's `dist/spa-mat` into the `web/vue` folder. (index.html must be there)
-5. Modify the first line in `web/routes/baseConfig.js` so that it looks like this `var UIconfig = require('../vue/statics/UiConfig');`
-6. Modify the first line in `web/server.js` so that it looks like this `const config = require('./vue/statics/UiConfig');`
-7. Modify ~line 87 in web -> server.js:
-replace
+ In your gekko-folder zip up the folder `web/vue` as backup.
+ Place everything from repo's `dist/spa-mat` into the `web/vue` folder. (index.html must be there)
+ Modify the first line in `web/routes/baseConfig.js` so that it looks like this `var UIconfig = require('../vue/statics/UiConfig');`
+ Modify the first line in `web/server.js` so that it looks like this `const config = require('./vue/statics/UiConfig');`
+ Modify ~line 87 in web -> server.js:
+ replace
 
 ```
 app
@@ -86,9 +86,10 @@ app
   .use(router.routes())
   .use(router.allowedMethods());
 ```
-7. Start Gekko with UI command (`node gekko --ui`).
-8. Enjoy!
+Start Gekko with UI command (`node gekko --ui`).
+Enjoy!
 
+#### [Setup Static-IP](https://github.com/universalbit-dev/gekko-m4/blob/master/docs/ip.md)
 ***If you changed your default connection or database-settings, please edit the file ***`<gekko-quasar-ui-folder>/src/statics/UiConfig.js`*** accordingly.***
 
 ## Guidance on strategy indicator naming conventions
