@@ -48,6 +48,8 @@ npm install -g @quasar/cli
 npm install --build-from-source
 ```
 
+[Build Commands]https://quasar.dev/quasar-cli-webpack/developing-spa/build-commands
+
 ```
 quasar build
 ```
