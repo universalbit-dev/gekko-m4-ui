@@ -22,10 +22,11 @@ Copyright (c) 2018 Klemens Wittig
 
 ### Dev-Mode
 Needed:
-  - NodeJS "engines": ^14   (v14.21.2)
-    "npm": "^6"             (6.14.17)
+  - NodeJS: 14 (v14.21.2)
+    Npm: 6     (6.14.17)
   
-NodeJs 14:
+NVM: Node Version Manager
+
 ```
 nvm use 14
 ```
@@ -33,17 +34,16 @@ nvm use 14
 
 ```
 git clone https://github.com/universalbit-dev/gekko-quasar-ui.git
+cd gekko-quasar-ui
 ```
 
+[Quasar Cli @Latest](https://www.npmjs.com/package/@quasar/cli)
 ```
 npm install -g @quasar/cli
 
 ```
 
-```
-cd gekko-quasar-ui
-```
-
+[NPM Build](https://docs.npmjs.com/cli/v6/commands/npm-build)
 ```
 npm install --build-from-source
 ```
