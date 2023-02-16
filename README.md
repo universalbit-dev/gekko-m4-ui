@@ -1,13 +1,10 @@
-# !ARCHIVED! I am not working on this actively anymore.
-## UPDATE 2019-09-08: UI is now ported to Quasar Framework 1.0 ##
-# Gordon-UI for Gekko trading bot
+## UPDATE 2023-16-02: UI is now ported to Quasar Framework 1.22.5 ##
+Gekko Gordon UI
+The MIT License (MIT)
+Copyright (c) 2018 Klemens Wittig
 
-This is my personal try to port the original Gekko UI to the *Quasar Framework 1.0*.
-It's based off the original code from the [Gekko trading bot](https://gekko.wizb.it/) UI.
+*Sidenote: This repository should work with Noejs14.
 
-Use this parallel to the original Gekko-UI (or compile and replace the original).
-
-*Sidenote: This repository should work with all Gekkos > version 0.6. It's still somehow messy imho - but it works :)*
 
 ## Some Features:
 - "Tickers" for all running live market-watchers in the top toolbar
@@ -19,36 +16,56 @@ Use this parallel to the original Gekko-UI (or compile and replace the original)
 - Enhanced information for running live-bots (differentiate between live-bot and paper-trader at a glance)
 - when present: **render indicator results to market chart**
 - download backtest data as excel and csv
-- and more...
+- and more...[Quasar Project](https://v1.quasar.dev/)
 
 ## Usage
 
 ### Dev-Mode
 Needed:
-  - NodeJS >= 7.6
-  - running Gekko Instance started as `node gekko --ui`
+  - NodeJS "engines": ^14   (v14.21.2)
+    "npm": "^6"             (6.14.17)
+  
+NodeJs 14:
+```
+nvm use 14
+```
+### Compile for replacing gekko ui with your user interface project
 
-*Side-Note: I'm running on Windows 10 - so here it's working. Linux sometimes gave me headaches while installing dependencies...*
+```
+git clone https://github.com/universalbit-dev/gekko-quasar-ui.git
+```
 
-To install, follow these steps:
+```
+npm install -g @quasar/cli
 
-1. Install Quasar-CLI via npm `npm install -g @quasar/cli`, to make sure, everything is alright, follow the official installation guide to Quasar https://quasar.dev/quasar-cli/installation .
-2. Clone this repo to some location on your hardline (should work from any directory in DEV-Mode).
-3. Fire up your gekko in UI-Mode.
-4. CD into cloned repository and run `npm install` or if you prefer yarn, `yarn install`.
-5. Start the UI with `quasar dev`
+```
 
-*Note: If it complains about missing modules, make sure, vue-cli and quasar-cli are properly installed.*
+```
+cd gekko-quasar-ui
+```
 
-### Compile for replacing the original Gekko-UI
-1. Clone this repo.
-2. Run `npm install` + ```quasar build``` from this repo.
-2. In your gekko-folder zip up the folder `web/vue` as backup.
-3. Place everything from repo's `dist/spa-mat` into the `web/vue` folder. (index.html must be there)
-4. Modify the first line in `web/routes/baseConfig.js` so that it looks like this `var UIconfig = require('../vue/statics/UiConfig');`
-5. Modify the first line in `web/server.js` so that it looks like this `const config = require('./vue/statics/UiConfig');`
-6. Modify ~line 87 in web -> server.js:
+```
+npm install --build-from-source
+```
+
+```
+quasar build
+```
+
+
+
+
+
+---
+---
+
+3. In your gekko-folder zip up the folder `web/vue` as backup.
+4. Place everything from repo's `dist/spa-mat` into the `web/vue` folder. (index.html must be there)
+5. Modify the first line in `web/routes/baseConfig.js` so that it looks like this `var UIconfig = require('../vue/statics/UiConfig');`
+6. Modify the first line in `web/server.js` so that it looks like this `const config = require('./vue/statics/UiConfig');`
+7. Modify ~line 87 in web -> server.js:
 replace
+
 ```
 app
   .use(cors())
