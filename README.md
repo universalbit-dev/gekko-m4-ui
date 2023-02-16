@@ -152,20 +152,7 @@ The 'topleft' will plot the indicator on the top chart (below the market chart) 
 6. botright
 
 ## Donations
-
-If you like the ported UI, drop me some coins for coffee ;)
-
+The MIT License (MIT)
+Copyright (c) 2018 Klemens Wittig
 ***BTC: 191hR9AftcrGH2Vb29ogPBoUjFowsvAMrk***
-
-## Screenshots
-
-![image1](img/gekko-quasar-1.png?raw=true "Screenshot 1")
-![image2](img/gekko-quasar-2.png?raw=true "Screenshot 2")
-![image3](img/gekko-quasar-3.png?raw=true "Screenshot 3")
-![image4](img/gekko-quasar-4.png?raw=true "Screenshot 4")
-![image5](img/gekko-quasar-5.png?raw=true "Screenshot 5")
-![image6](img/gekko-quasar-6.png?raw=true "Screenshot 6")
-![image7](img/gekko-quasar-7.png?raw=true "Screenshot 7")
-![image8](img/gekko-quasar-8.png?raw=true "Screenshot 8")
-![image9](img/gekko-quasar-9.png?raw=true "Screenshot 9")
 
