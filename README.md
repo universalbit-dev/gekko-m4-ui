@@ -51,10 +51,9 @@ npm install --build-from-source
 ```
 quasar build
 ```
+![Alt text](https://github.com/universalbit-dev/gekko-quasar-ui/blob/master/img/quasar_ui_build.png "build")
 
-
-
-
+![Alt text](https://github.com/universalbit-dev/gekko-quasar-ui/blob/master/img/quasar_build_succeded.png "succeded")
 
 ---
 ---
