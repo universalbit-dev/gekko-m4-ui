@@ -3,7 +3,7 @@ Gekko Gordon UI
 The MIT License (MIT)
 Copyright (c) 2018 Klemens Wittig
 
-*Sidenote: This repository should work with Noejs14.
+*Sidenote: This repository should work with Nodejs14.
 
 
 ## Some Features:
