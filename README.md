@@ -1,4 +1,6 @@
 ## UPDATE 2023-16-02: UI is now ported to Quasar Framework 1.22.5 ##
+
+
 Gekko Gordon UI
 The MIT License (MIT)
 Copyright (c) 2018 Klemens Wittig
@@ -17,8 +19,6 @@ Copyright (c) 2018 Klemens Wittig
 - when present: **render indicator results to market chart**
 - download backtest data as excel and csv
 - and more...[Quasar Project](https://v1.quasar.dev/)
-
-## Usage
 
 ### Dev-Mode
 Needed:
@@ -90,7 +90,6 @@ Start Gekko with UI command (`node gekko --ui`).
 Enjoy!
 
 #### [Setup Static-IP](https://github.com/universalbit-dev/gekko-m4/blob/master/docs/ip.md)
-***If you changed your default connection or database-settings, please edit the file ***`<gekko-quasar-ui-folder>/src/statics/UiConfig.js`*** accordingly.***
 
 ## Guidance on strategy indicator naming conventions
 
