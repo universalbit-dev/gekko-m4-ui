@@ -1,6 +1,4 @@
-UPDATE 2023-16-02: UI is now ported to Quasar Framework 1.22.5
-
-Gekko Gordon UI The MIT License (MIT) Copyright (c) 2018 Klemens Wittig
+Quasar Framework 1.22.6
 
 Some Features:
 
@@ -37,9 +35,13 @@ Build Commands
 quasar build
 ```
 
+In your gekko-folder zip up the folder web/vue as backup. Place everything from repo's dist/spa-mat into the web/vue folder. (index.html must be there) Modify the first line in web/routes/baseConfig.js so that it looks like this 
+```
+var UIconfig = require('../vue/statics/UiConfig'); 
+```
 
-In your gekko-folder zip up the folder web/vue as backup. Place everything from repo's dist/spa-mat into the web/vue folder. (index.html must be there) Modify the first line in web/routes/baseConfig.js so that it looks like this var UIconfig = require('../vue/statics/UiConfig'); Modify the first line in web/server.js so that it looks like this const config = require('./vue/statics/UiConfig'); Modify ~line 87 in web -> server.js: replace
-
+Modify the first line in web/server.js so that it looks like this const config = require('./vue/statics/UiConfig'); Modify ~line 87 in web -> server.js: replace
+```
 app
   .use(cors())
   .use(serve(WEBROOT + 'vue/dist'))
@@ -47,9 +49,9 @@ app
   .use(require('koa-logger')())
   .use(router.routes())
   .use(router.allowedMethods());
-
+```
 with
-
+```
 app
   .use(cors())
   .use(serve(WEBROOT + 'vue'))
@@ -57,7 +59,7 @@ app
   .use(require('koa-logger')())
   .use(router.routes())
   .use(router.allowedMethods());
-  
+```
 [Static IP](https://github.com/universalbit-dev/gekko-m4/blob/master/docs/ip.md)
 
 Guidance on strategy indicator naming conventions
@@ -70,17 +72,17 @@ Under the main market graph, there will be three separate graphs. Each of the th
 Automatic assignment of indicators
 
 The software will automatically assign indicators to an appropiate axis as long as the indicator is named correctly in the strategy you create. When you initialise an indicator in the strategy, you include a line similar to the following (I will use SMA as an example):
-
+```
 this.addTalibIndicator('sma', 'sma', params);
-
+```
 The first 'sma' in the brackets above is used in the graphing. It is important that the naming is the same as the second 'sma' if you wish to use automatic asignment to the correct graph, which in this case would be the market graph.
 Using the same indicator multiple times
 
 In the case that you wish to use an indicator more than once, which is common with indicators like the EMA and SMA, you will need to use the following syntax:
-
+```
 this.addTalibIndicator('sma__fast', 'sma', params);
 this.addTalibIndicator('sma__slow', 'sma', params);
-
+```
 As you can see the indicator name 'sma' must be used, but you can make the name unique by using a double underscore and adding a unique name after the double underscore. There is no particular requirement for the unique name.
 Specifying which axis to assign the indicator
 
@@ -90,15 +92,15 @@ Change the indicator type
 You can change an indicator that is normally plotted on the market graph to be plotted on one of the three graphs below the market, or visa-versa.
 
 To assign an indicator to the market you can use the following syntax:
-
+```
 this.addTalibIndicator('ovr__rsi', 'rsi', params);
-
+```
 The 'ovr' before the double underscore will assign the indicator as an overlay over the market graph. Please note the part after the double underscore is irrelevant and just to make the name unique, it can be whatever you like.
 
 To assign an indicator to the three charts below the graph, and be assigned to an axis automatically, use the following syntax:
-
+```
 this.addTalibIndicator('ind__sma', 'sma', params);
-
+```
 Specify exactly which axis to assign an indicator to
 
 You can gain even more control over the assignment by specifying exactly which of the six y-axis on the graphs below the market you want a particular indicator to be assigned to.
@@ -106,9 +108,9 @@ You can gain even more control over the assignment by specifying exactly which o
 Please note that if you go down this route it is recommended that you specify an axis for all indicators that are not overlayed on the market, otherwise you may end up with the axis scaling being inappropriate due to some indicators being automatically assigned.
 
 To specify an axis you should use the following syntax:
-
+```
 this.addTalibIndicator('topleft__rsi', 'rsi', params);
-
+```
 The 'topleft' will plot the indicator on the top chart (below the market chart) and on the left axis. You can gain axis to any of the other axis by using one of the following:
 
     topleft
