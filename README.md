@@ -2,7 +2,6 @@ UPDATE 2023-16-02: UI is now ported to Quasar Framework 1.22.5
 
 Gekko Gordon UI The MIT License (MIT) Copyright (c) 2018 Klemens Wittig
 
-*Sidenote: This repository should work with Nodejs14.
 Some Features:
 
     "Tickers" for all running live market-watchers in the top toolbar
@@ -17,11 +16,11 @@ Some Features:
     and more...Quasar Project
 
 
-    NodeJS: 14 (v14.21.2) Npm: 6 (6.14.17)
+    NodeJS: v16.19.1 (npm v8.19.3)
 
 NVM: Node Version Manager
 
-nvm use 14
+nvm use 16
 
 Compile for replacing gekko ui with your user interface project
 
