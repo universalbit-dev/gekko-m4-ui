@@ -1,5 +1,5 @@
 Quasar Framework 1.22.6
-
+[Support UniversalBit Project](https://github.com/universalbit-dev/universalbit-dev/tree/main/support)
 Some Features:
 
     "Tickers" for all running live market-watchers in the top toolbar
@@ -62,4 +62,4 @@ app
 ```
 [Static IP](https://github.com/universalbit-dev/gekko-m4/blob/master/docs/ip.md)
 
-Donations : [Support UniversalBit Project](https://github.com/universalbit-dev/universalbit-dev/tree/main/support)
+
