@@ -6,14 +6,14 @@
       persistent
     >
       <q-card class="bg-white q-pa-md">
-        <div class="text-h3 text-negative">Disconnected</div>
+        <div class="text-h6 text-negative">Disconnected</div>
         <p>Something happened to either Gekko or the connection. <br>
           Please check the terminals where Gekko is running <em>or</em> your network connection.
         </p>
         <q-separator />
         <p class="text-secondary text-center">I'm trying to re-establish the connection...</p>
         <div class="row justify-center">
-          <q-spinner-radio color="secondary" size="48px"/>
+          <q-spinner-radio color="secondary" size="16px"/>
         </div>
       </q-card>
     </q-dialog>
