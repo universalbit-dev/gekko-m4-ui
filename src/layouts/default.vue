@@ -11,7 +11,7 @@
           <q-icon name="menu"/>
         </q-btn>
         <q-toolbar-title>
-          Gordon UI
+          Gekko-M4
         </q-toolbar-title>
         <q-space></q-space>
         <q-tabs shrink stretch>
@@ -37,12 +37,12 @@
         <div class="q-mx-xs" v-for="(w,idx) in currentWatchers" :key="'prices-' + w.id" v-if="w.events.latest.candle">
           <div class="text-h6">{{w.events.latest.candle.close}}
             <img class="crypto-icon-16"
-                 :src="'statics/crypto_icons/white/' + w.config.watch.currency.toLowerCase() + '.svg'"
+                 :src="'statics/crypto_icons/color/' + w.config.watch.currency.toLowerCase() + '.svg'"
                  :alt="w.config.watch.currency" :title="w.config.watch.currency">
           </div>
           <div class="text-subtitle">
             <img class="crypto-icon-16 q-icon q-mr-xs"
-                 :src="'statics/crypto_icons/white/' + w.config.watch.asset.toLowerCase() + '.svg'"
+                 :src="'statics/crypto_icons/color/' + w.config.watch.asset.toLowerCase() + '.svg'"
                  :alt="w.config.watch.asset" :title="w.config.watch.asset">
             {{w.config.watch.exchange}}
           </div>
@@ -56,82 +56,48 @@
     >
       <q-list>
         <q-item-label header>Essential Links</q-item-label>
-        <q-item clickable @click.native="openURL('https://github.com/h256/gekko-quasar-ui')">
+        <q-item clickable @click.native="openURL('https://github.com/universalbit-dev/gekko-m4')">
           <q-item-section side>
             <q-icon name="fab fa-github-square"></q-icon>
           </q-item-section>
           <q-item-section>
-            <q-item-label>Gekko-Quasar-UI on GitHub</q-item-label>
-            <q-item-label caption>github.com/h256/gekko-quasar-ui</q-item-label>
+            <q-item-label>Gekko-M4</q-item-label>
+            <q-item-label caption>github.com/universalbit-dev/gekko-m4</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable @click.native="openURL('https://github.com/askmike/gekko')">
+        
+        <q-item clickable @click.native="openURL('https://github.com/universalbit-dev/gekko-quasar-ui')">
           <q-item-section side>
             <q-icon name="fab fa-github-square"></q-icon>
           </q-item-section>
           <q-item-section>
-            <q-item-label>Gekko on GitHub</q-item-label>
-            <q-item-label caption>github.com/askmike/gekko</q-item-label>
+            <q-item-label>Gekko-Quasar-UI</q-item-label>
+            <q-item-label caption>github.com/universalbit-dev/gekko-quasar-ui</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable @click.native="openURL('https://discord.gg/26wMygt')">
-          <q-item-section side>
-            <q-icon name="chat"></q-icon>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Gekko Discord Channel</q-item-label>
-            <q-item-label caption>https://discord.gg/26wMygt</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable @click.native="openURL('https://forum.gekko.wizb.it/')">
-          <q-item-section side>
-            <q-icon name="record_voice_over"></q-icon>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Gekko Forum</q-item-label>
-            <q-item-label caption>https://forum.gekko.wizb.it/</q-item-label>
-          </q-item-section>
-        </q-item>
+        
         <q-separator></q-separator>
-        <q-item-label header>Unofficial resources (use at own risk!)</q-item-label>
-        <q-item clickable @click.native="openURL('https://github.com/gekkowarez/gekkoga')">
+        <q-item-label header>UniversalBit Project</q-item-label>
+
+          <q-item clickable @click.native="openURL('https://github.com/universalbit-dev')">
           <q-item-section side>
-            <q-icon name="fab fa-github"></q-icon>
+            <q-icon name="fab fa-github-square"></q-icon>
           </q-item-section>
           <q-item-section>
-            <q-item-label>Gekko-GA</q-item-label>
-            <q-item-label caption>Genetic algorithm for gekko</q-item-label>
+            <q-item-label>UniversalBit-Dev</q-item-label>
+            <q-item-label caption>github.com/universalbit-dev</q-item-label>
           </q-item-section>
         </q-item>
-        <q-item clickable @click.native="openURL('https://github.com/Gab0/japonicus')">
-          <q-item-section side>
-            <q-icon name="fab fa-github"></q-icon>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Japonicus</q-item-label>
-            <q-item-label caption>Genetic algorithm backtester for gekko</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-separator/>
-        <q-item-label header>Other resources</q-item-label>
-        <q-item clickable @click.native="openURL('http://cryptoicons.co/')">
-          <q-item-section side>
-            <q-icon name="face"></q-icon>
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Atomiclabs' Cryptocurrency Icons</q-item-label>
-            <q-item-label caption>http://cryptoicons.co/</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-separator/>
-        <q-item-label header>Quasar Framework resources</q-item-label>
-        <q-item clickable @click.native="openURL('http://quasar.dev')">
+
+        <q-separator></q-separator>
+
+        <q-item-label header>Resources</q-item-label>
+        <q-item clickable @click.native="openURL('https://v1.quasar.dev/')">
           <q-item-section side>
             <q-icon name="school"></q-icon>
           </q-item-section>
           <q-item-section>
             <q-item-label>Quasar Framework</q-item-label>
-            <q-item-label caption>quasar-framework.org</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
@@ -144,19 +110,18 @@
     <q-footer reveal>
       <q-toolbar class="bg-blue-grey-7">
         <div>
-          <div class="text-h6">Gordon UI v {{version.ui}}</div>
+          <div class="text-h6">Gekko-UI v {{version.ui}}</div>
           <div class="text-subtitle">Running on Quasar v{{ $q.version }}</div>
         </div>
         <q-space></q-space>
         <div>
-          <div class="text-h6"><em>Use Gekko and Gordon UI at your own risk!</em></div>
-          <div class="text-subtitle" v-if="version.gekko">Using Gekko v {{version.gekko}}</div>
+          <div class="text-h6"><em>Gekko-M4 is licensed under the MIT License</em></div>
+          <div class="text-subtitle" v-if="version.gekko">Gekko v {{version.gekko}}</div>
         </div>
         <q-space></q-space>
         <q-toolbar-title>
-          <div class="text-h6">Crypto-Icons by <a href="http://cryptoicons.co/">crypticons.co</a></div>
+
         </q-toolbar-title>
-      </q-toolbar>
     </q-footer>
   </q-layout>
 </template>
@@ -171,7 +136,7 @@
     name: "MainLayoutPage",
     data() {
       return {
-        leftDrawerOpen: false,
+        leftDrawerOpen: true,
         version: {
           gekko: null,
           ui: uiPackage.version
@@ -218,11 +183,6 @@
       openURL
     }
   };
-/*
-Gekko Gordon UI
-The MIT License (MIT)
-Copyright (c) 2018 Klemens Wittig
-*/
 </script>
 
 <style>
