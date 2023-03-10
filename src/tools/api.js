@@ -1,5 +1,4 @@
 // global window.CONFIG
-
 const config = window.CONFIG.ui;
 const endpoint = `${config.host}${config.port === 80 ? '' : `:${config.port}`}${config.path}`;
 
