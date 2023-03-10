@@ -1,5 +1,3 @@
-Creative Commons Legal Code
-
 CC0 1.0 Universal
 
     CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
