@@ -1,5 +1,5 @@
 Quasar Framework 1.22.6
-[Support UniversalBit Project](https://github.com/universalbit-dev/universalbit-dev/tree/main/support)
+
 Some Features:
 
     "Tickers" for all running live market-watchers in the top toolbar
@@ -11,7 +11,8 @@ Some Features:
     download backtest data as excel and csv
 
     NodeJS: v16.19.1 (npm v8.19.3)
-
+##### [Support UniversalBit Project](https://github.com/universalbit-dev/universalbit-dev/tree/main/support)
+---
 NVM: Node Version Manager
 ```
 nvm use 16
