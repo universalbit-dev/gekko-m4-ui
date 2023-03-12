@@ -14,7 +14,7 @@ export default [
       { path: 'data/importer/import/:id', component: () => import('components/data/import/single')},
       { path: 'config', component: () => import('pages/config') },
       { path: 'help', beforeEnter: (to, from, next) => {
-        window.open('https://gekko.wizb.it/docs/introduction/about_gekko.html', '_blank');
+        window.open('https://github.com/universalbit-dev/gekko-m4', '_blank');
       } }
     ]
   },
