@@ -27,7 +27,7 @@ Quasar Cli @Latest
 ```
 npm install -g @quasar/cli
 ```
-NPM Build
+npm (8.19.3)
 ```
 npm i
 ```
