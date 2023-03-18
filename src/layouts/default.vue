@@ -19,7 +19,7 @@
           <q-route-tab icon="cast_connected" label="Live Gekkos" to="/live-gekkos" exact>
             <q-badge color="green" floating v-if="stratrunners.length">{{stratrunners.length}}</q-badge>
           </q-route-tab>
-          <q-route-tab icon="timeline" label="Backtest" to="/backtest" exact></q-route-tab>
+          <q-route-tab icon="timeline" label="Debug Strategy" to="/backtest" exact></q-route-tab>
           <q-route-tab icon="storage" label="Data" to="/data" exact></q-route-tab>
           <q-route-tab icon="import_export" label="Importer" to="/data/importer" exact>
             <q-badge color="blue" floating v-if="activeImports > 0">{{activeImports}}</q-badge>
