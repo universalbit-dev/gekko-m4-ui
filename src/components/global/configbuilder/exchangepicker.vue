@@ -17,7 +17,7 @@
     props: ["onlyTradable", "onlyImportable"],
     data: function () {
       return {
-        exchange: "binance"
+        exchange: "exchange_simulator"
       };
     },
     created: function () {
