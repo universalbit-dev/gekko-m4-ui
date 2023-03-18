@@ -76,7 +76,7 @@
         candleSizeUnit: 'minute',
         rawCandleSize: 10,
 
-        strategy: 'strategy',
+        strategy: 'Strategy',
         historySize: 1,
 
         rawStratParams: '',
