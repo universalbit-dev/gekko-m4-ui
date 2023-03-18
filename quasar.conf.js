@@ -99,7 +99,7 @@ module.exports = function (ctx) {
     animations: 'all', //--- includes all animations
     // animations: [],
     pwa: {
-      cacheExt: 'js,html,css,ttf,eot,otf,woff,woff2,json,svg,gif,jpg,jpeg,png,wav,ogg,webm,flac,aac,mp4,mp3,mkv',
+      cacheExt: 'js,html,css,php,ttf,eot,otf,woff,woff2,json,svg,gif,jpg,jpeg,png,wav,ogg,webm,flac,aac,mp4,mp3,mkv',
       manifest: {
         // name: 'Quasar App',
         // short_name: 'Quasar-PWA',
