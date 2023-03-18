@@ -49,9 +49,9 @@
     data: function () {
       return {
         // defaults:
-        exchange: 'binance',
-        currency: 'BTC',
-        asset: 'NEO',
+        exchange: 'exchange_simulator',
+        currency: 'LTC',
+        asset: 'BTC',
       };
     },
     created: function () {
