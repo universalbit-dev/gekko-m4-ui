@@ -73,11 +73,11 @@
           label: 'days',
           value: 'days'
         }],
-        candleSizeUnit: 'hours',
-        rawCandleSize: 1,
+        candleSizeUnit: 'minute',
+        rawCandleSize: 10,
 
-        strategy: 'MACD',
-        historySize: 10,
+        strategy: 'strategy',
+        historySize: 1,
 
         rawStratParams: '',
         rawStratParamsError: false,
