@@ -128,6 +128,11 @@ module.exports = function (ctx) {
             'src': 'statics/icons/favicon.ico',
             'sizes': '32x32',
             'type': 'image/x-icon'
+          },
+          {
+            'src': 'statics/icons/favicon.ico',
+            'sizes': '48x48',
+            'type': 'image/x-icon'
           }
         ]
       }
