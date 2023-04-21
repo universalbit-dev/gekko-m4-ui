@@ -13,7 +13,7 @@ Some Features:
     NodeJS: v16.19.1 (npm v8.19.3)
 ##### [Support UniversalBit Project](https://github.com/universalbit-dev/universalbit-dev/tree/main/support)
 ---
-NVM: Node Version Manager
+NVM: Node Version Manager #16
 ```
 nvm use 16
 ```
