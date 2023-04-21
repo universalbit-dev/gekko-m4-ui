@@ -61,6 +61,4 @@ app
   .use(router.routes())
   .use(router.allowedMethods());
 ```
-[Static IP](https://github.com/universalbit-dev/gekko-m4/blob/master/docs/ip.md)
-
 
