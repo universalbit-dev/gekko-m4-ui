@@ -14,7 +14,6 @@ Some Features:
     download backtest data as excel and csv
 
     NodeJS: v16.19.1 (npm v8.19.3)
-##### [Support UniversalBit Project](https://github.com/universalbit-dev/universalbit-dev/tree/main/support)
 ---
 NVM: Node Version Manager #16
 ```
