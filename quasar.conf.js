@@ -21,15 +21,9 @@ module.exports = function (ctx) {
       remove: []
     },
     build: {
-      scopeHoisting: true,
-      vueRouterMode: 'hash',//'history',
-      // gzip: true,
-      // analyze: true,
-      // extractCSS: false,
-      // useNotifier: false,
-      extendWebpack (cfg) {
-      }
-    },
+      vueRouterMode: 'history',
+      extendWebpack (cfg) {}
+    }, 
     devServer: {
       // https: true,
       // port: 8080,
