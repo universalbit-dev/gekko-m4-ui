@@ -1,6 +1,9 @@
 ##### [Support UniversalBit Project](https://github.com/universalbit-dev/universalbit-dev/tree/main/support)
 
-##### Quasar Framework 1.22.6
+#### Quasar Framework 1.22.6
+- ##### Build mode........ spa
+- ##### Pkg quasar........ v1.22.6
+- ##### Pkg @quasar/app... v2.4.3
 
 Some Features:
 
@@ -12,56 +15,36 @@ Some Features:
     when present: render indicator results to market chart
     download backtest data as excel and csv
 
-    NodeJS: v16.19.1 (npm v8.19.3)
+
+Gekko-M4-Quasar UI compile on Nodejs Version (v18.14.2) Npm (9.5.0)
 ---
-NVM: Node Version Manager #16
+NVM [Node Version Manager](https://github.com/nvm-sh/nvm)
 ```
-nvm use 16
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
 
-Compile for replacing gekko ui with your user interface project
+- Compile for replacing gekko ui with your user interface project
 ```
 git clone https://github.com/universalbit-dev/gekko-quasar-ui.git
 cd gekko-quasar-ui
 ```
-Quasar Cli @Latest
-```
-npm install -g @quasar/cli
-```
-npm (8.19.3)
+
+- Install
 ```
 npm i
 ```
-Build Commands
+
+- Quasar Cli @Latest
 ```
+npm install -g @quasar/cli
+```
+
+- Build Commands
+```
+export NODE_OPTIONS=--openssl-legacy-provider
 quasar build
 ```
 
-In your gekko-folder zip up the folder web/vue as backup. Place everything from repo's dist/spa-mat into the web/vue folder. (index.html must be there) Modify the first line in web/routes/baseConfig.js so that it looks like this 
-```
-var UIconfig = require('../vue/statics/UiConfig'); 
-```
-
-Modify the first line in web/server.js so that it looks like this const config = require('./vue/statics/UiConfig'); Modify ~line 87 in web -> server.js: replace
-```
-app
-  .use(cors())
-  .use(serve(WEBROOT + 'vue/dist'))
-  .use(bodyParser())
-  .use(require('koa-logger')())
-  .use(router.routes())
-  .use(router.allowedMethods());
-```
-with
-```
-app
-  .use(cors())
-  .use(serve(WEBROOT + 'vue'))
-  .use(bodyParser())
-  .use(require('koa-logger')())
-  .use(router.routes())
-  .use(router.allowedMethods());
-```
 
 
 #### [Bash Reference Manual](https://www.gnu.org/software/bash/manual/html_node/index.html)
