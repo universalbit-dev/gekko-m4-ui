@@ -16,7 +16,8 @@ Some Features:
     download backtest data as excel and csv
 
 
-Gekko-M4-Quasar UI compile on Nodejs Version (v18.14.2) Npm (9.5.0)
+- Gekko-M4-Quasar UI 
+- Nodejs Version (v18.14.2) Npm (9.5.0)
 ---
 NVM [Node Version Manager](https://github.com/nvm-sh/nvm)
 ```
