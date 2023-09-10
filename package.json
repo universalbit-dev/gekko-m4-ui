@@ -36,7 +36,7 @@
     "zrender": "^5.4.3"
   },
   "devDependencies": {
-    "@quasar/app": "^2.4.3",
+    "@quasar/app": "^3.3.3",
     "marked": "^4.2.12",
     "strip-ansi": "^5.2.0",
     "superagent": "^8.0.9",
