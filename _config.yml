@@ -5,7 +5,7 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
 remote_theme: pages-themes/minimal@v0.2.0
-plugins:
+plugins: UA-169399028-2
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 lsi: false
 safe: true
