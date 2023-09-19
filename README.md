@@ -17,7 +17,7 @@ Some Features:
 
 
 - Gekko-M4-Quasar UI 
-- Nodejs Version (v18.14.2) Npm (9.5.0)
+- Nodejs Version (v20.6.0) Npm (9.8.1)
 ---
 NVM [Node Version Manager](https://github.com/nvm-sh/nvm)
 ```
