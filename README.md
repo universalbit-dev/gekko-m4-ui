@@ -23,6 +23,7 @@ NVM [Node Version Manager](https://github.com/nvm-sh/nvm)
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
+* #### Virtual Environment [NodeEnv](https://github.com/universalbit-dev/gekko-m4/tree/master/docs/nodenv)
 
 - Compile for replacing gekko ui with your user interface project
 ```
