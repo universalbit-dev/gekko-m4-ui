@@ -23,7 +23,7 @@ module.exports = function (ctx) {
     build: {
       vueRouterMode: 'history',
       extendWebpack (cfg) {}
-    }, 
+    },
     devServer: {
       // https: true,
       // port: 8080,
@@ -90,7 +90,7 @@ module.exports = function (ctx) {
         'Dialog'
       ]
     },
-    animations: 'all', //--- includes all animations
+    animations: '', //--- includes all animations
     // animations: [],
     pwa: {
       cacheExt: 'js,html,css,php,ttf,eot,otf,woff,woff2,json,svg,gif,jpg,jpeg,png,wav,ogg,webm,flac,aac,mp4,mp3,mkv',
