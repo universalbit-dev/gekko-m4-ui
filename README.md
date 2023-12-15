@@ -1,6 +1,6 @@
 # gekko-m4-ui (gekko-m4-ui)
 
-Gekko M4 Front End
+Gekko M4 FrontEnd
 
 ## Install the dependencies
 ```bash
