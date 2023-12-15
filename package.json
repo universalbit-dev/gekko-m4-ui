@@ -1,39 +1,53 @@
 {
   "name": "gekko-m4-ui",
-  "version": "0.6.9-m4",
-  "description": "Gekko M4 UI",
+  "version": "0.0.1",
+  "description": "Gekko M4 Front End",
+  "productName": "gekko-m4-ui",
+  "author": "universalbit",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev",
+    "build": "quasar build"
   },
   "dependencies": {
-    "async": "^2.4.3",
-    "axios": "^1.5.1",
-    "chokidar": "^3.5.3",
-    "convnet": "^1.0.0",
-    "core-js": "^3.33.1",
-    "echarts": "^5.4.3",
-    "humanize-duration": "^3.20.1",
-    "lodash": "^4.17.21",
-    "moment": "^2.24.0",
-    "quasar": "^2.13.0",
-    "svgo": "^3.0.2",
-    "uuid": "^9.0.0"
+    "@quasar/extras": "^1.16.4",
+    "axios": "^1.2.1",
+    "core-js": "^3.6.5",
+    "humanize-duration": "^3.31.0",
+    "moment": "^2.29.4",
+    "quasar": "^2.6.0",
+    "vue": "^3.0.0",
+    "vue-echarts": "^6.6.4",
+    "vue-i18n": "^9.0.0",
+    "vue-json-excel": "^0.3.0",
+    "vue-router": "^4.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/universalbit-dev/gekko-quasar-ui.git"
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "@quasar/app-webpack": "^3.0.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "prettier": "^2.5.1"
   },
-  "keywords": [
-    "gekko",
-    "m4",
-    "ui"
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
   ],
-  "contribution": "UNiversalBiT-dev",
-  "author": "H256 <hansi256@web.de>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/universalbit-dev/gekko-quasar-ui/issues"
-  },
-  "homepage": "https://universalbit-dev.github.io/gekko-m4-ui/",
-  "main": ""
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
 }

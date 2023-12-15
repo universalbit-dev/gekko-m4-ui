@@ -1,7 +1,41 @@
-##### [Support UniversalBit Project](https://github.com/universalbit-dev/universalbit-dev/tree/main/support)
+# gekko-m4-ui (gekko-m4-ui)
 
-#### Quasar Framework 2
+Gekko M4 Front End
 
-#### Work in Progress
+## Install the dependencies
+```bash
+yarn
+# or
+npm install
+```
 
-#### [Bash Reference Manual](https://www.gnu.org/software/bash/manual/html_node/index.html)
+### Start the app in development mode (hot-code reloading, error reporting, etc.)
+```bash
+quasar dev
+```
+
+
+### Lint the files
+```bash
+yarn lint
+# or
+npm run lint
+```
+
+
+### Format the files
+```bash
+yarn format
+# or
+npm run format
+```
+
+
+
+### Build the app for production
+```bash
+quasar build
+```
+
+### Customize the configuration
+See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).
