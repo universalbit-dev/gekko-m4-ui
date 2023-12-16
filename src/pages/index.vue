@@ -17,7 +17,7 @@
            If you paid for this you have been scammed!</em></p>
        </div>
     <div class="col-4 q-pa-sm">
-      <img src="~assets/220px-Gordon_Gekko_DAP_HALF_Pencil.png" alt="gekko-logo">
+      <img src="~assets/quasar-logo-full.svg" alt="gekko-logo">
       <blockquote>
         <p>The most valuable commodity I know of is information.</p>
       </blockquote>
