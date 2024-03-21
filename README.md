@@ -1,3 +1,5 @@
+await GPU mining Algo
+
 # [gekko-m4-ui](https://universalbit-dev.github.io/gekko-m4-ui/)
 
 # Working in Progress
