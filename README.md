@@ -1,46 +1,12 @@
-await GPU mining Algo
+# [Gekko-M4-UI](https://universalbit-dev.github.io/gekko-m4-ui/)
 
-# [gekko-m4-ui](https://universalbit-dev.github.io/gekko-m4-ui/)
+### Working in Progress
 
-# Working in Progress
-
-
-Gekko M4 FrontEnd
+### Gekko M4 FrontEnd XOR User Interface
 
 ## Install the dependencies
 ```bash
-yarn
-# or
-npm install
+npm i
+npm run build 
 ```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
-
-
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
-
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).
+* [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js)
