@@ -14,9 +14,10 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
-    "axios": "^1.2.1",
+    "axios": "^1.6.8",
     "core-js": "^3.6.5",
     "d3":"^7.9.0",
+    "express":"^4.19.2",
     "humanize-duration": "^3.31.0",
     "moment": "^2.29.4",
     "quasar": "^2.6.0",
