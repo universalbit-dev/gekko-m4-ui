@@ -4,7 +4,8 @@
 
 ### Gekko M4 FrontEnd XOR User Interface
 
-## Install the dependencies
+[Nodejs 20 ] -- [NPM 10]
+
 ```bash
 npm i
 npm run build 
