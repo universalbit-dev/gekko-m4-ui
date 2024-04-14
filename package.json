@@ -1,7 +1,7 @@
 {
   "name": "gekko-m4-ui",
   "version": "0.0.1",
-  "description": "Gekko M4 FrontEnd",
+  "description": "Gekko M4 FrontEnd XOR User Interface",
   "productName": "gekko-m4-ui",
   "author": "universalbit",
   "private": true,
@@ -16,6 +16,7 @@
     "@quasar/extras": "^1.16.4",
     "axios": "^1.2.1",
     "core-js": "^3.6.5",
+    "d3":"^7.9.0",
     "humanize-duration": "^3.31.0",
     "moment": "^2.29.4",
     "quasar": "^2.6.0",
@@ -46,8 +47,7 @@
     "last 5 Opera versions"
   ],
   "engines": {
-    "node": ">= 12.22.1",
-    "npm": ">= 6.13.4",
-    "yarn": ">= 1.21.1"
+    "node": ">= 20",
+    "npm": ">= 10"
   }
 }
